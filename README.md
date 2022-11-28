@@ -1,6 +1,7 @@
 # YLIDE NOTTE APP
 
-This is a [ylide.io](https://ylide.io/) project  with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [ylide.io](https://ylide.io/) project 
+Check it out https://ylides-io-nottes.netlify.app/
 
 ## ABOUT THE APP
 Ylide Notte app allows users to take down notes personally or making it public on the blockchain
