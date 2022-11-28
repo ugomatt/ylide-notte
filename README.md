@@ -1,6 +1,8 @@
 # YLIDE NOTTE APP
 
 This is a [ylide.io](https://ylide.io/) project 
+
+## Try it out
 Check it out https://ylides-io-nottes.netlify.app/
 
 ## ABOUT THE APP
