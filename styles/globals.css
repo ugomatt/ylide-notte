@@ -1,0 +1,160 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Anek+Gurmukhi:wdth,wght@100,100;100,200;100,300;100,500;100,600;100,700;100,800;125,400&family=Syne:wght@400;500;600;700;800&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+@import url('https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@1,800,500,100,700,400,300,200,900&f[]=satoshi@1,900,700,500,301,701,300,501,401,901,400,2&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  @apply bg-slate-50 dark:bg-slate-900 dark:text-slate-50;
+  font-family: 'Satoshi', 'Anek Gurmukhi', 'Syne', 'Work Sans', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-variation-settings: 'wdth' 115;
+
+}
+
+a {
+  color: inherit;
+  /* text-decoration: none; */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-extrabold;
+  font-family: 'Cabinet Grotesk', 'Anek Gurmukhi', 'Syne', 'Work Sans', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-variation-settings: 'wdth' 130;
+
+}
+
+li{
+  list-style-type: none;
+}
+
+.cta {
+  @apply transition font-semibold p-2 bg-white border rounded-lg hover:scale-105 active:scale-95 active:shadow-inner disabled:opacity-40 disabled:pointer-events-none;
+  @apply dark:bg-slate-800 dark:border-slate-600;
+}
+
+.cta.cta-w-icon {
+  @apply flex gap-2 items-center;
+}
+
+.cta.reveal-text {
+  @apply transition gap-0;
+}
+
+.cta.reveal-text > .text{
+  @apply max-w-0 overflow-hidden;
+}
+
+.cta.reveal-text:hover, .cta.reveal-text:active, .cta.reveal-text:focus {
+  @apply gap-2;
+}
+
+.cta.reveal-text:hover > .text, .cta.reveal-text:active > .text, .cta.reveal-text:focus > .text{
+  @apply max-w-full;
+}
+
+.w-icon {
+  @apply flex gap-2 items-center;
+}
+
+.w-icon .icon {
+  @apply shrink-0;
+}
+
+
+.icon {
+  @apply h-5 w-5 text-blue-500;
+  @apply dark:text-slate-100;
+}
+
+.rotate {
+  @apply animate-spin;
+}
+
+.dropdown {
+  @apply relative flex gap-2 items-center;
+}
+
+.dropdown-list {
+  @apply absolute top-full mt-1 right-0 bg-white border border-gray-200 rounded-lg hover:visible hover:opacity-100 shadow-lg;
+  @apply dark:bg-slate-800 dark:border-slate-600;
+}
+
+.dropdown-btn:focus ~ .dropdown-list{
+  @apply opacity-100 visible pointer-events-auto;
+}
+
+.note .note-footer .options{
+  @apply flex items-center;
+}
+
+.toast {
+  @apply fixed left-1/2 transform -translate-x-1/2 min-w-[4rem] p-4 bg-white border border-blue-600 rounded-lg  z-20;
+  @apply dark:bg-slate-800 dark:border-slate-600;
+  @apply transition-all w-icon -bottom-48;
+}
+
+.toast.active {
+  @apply bottom-12;
+}
+
+.tab {
+  @apply flex flex-col gap-8 pt-8;
+}
+
+.tab nav[role="tablist"] {
+  @apply flex gap-4 justify-center border-b border-slate-200;
+  @apply dark:border-slate-700;
+}
+
+.tab nav[role="tablist"] a{
+  @apply p-2 border-b-2 border-transparent;
+}
+
+.tab a[role="tab"][data-active="true"] {
+  @apply border-blue-600;
+}
+
+.site-logo {
+  @apply font-black text-2xl;
+}
+
+.site-logo a {
+  @apply !no-underline
+}
+
+.site-footer {
+  @apply w-full p-8 mt-12 bg-slate-100;
+  @apply bg-slate-800 bg-opacity-30;
+}
+
+.site-footer .wrapper {
+  @apply max-w-7xl m-auto;
+}
+
+.site-footer .footer-header {
+  @apply flex flex-wrap gap-4 justify-between mb-2;
+}
+
+.logo-cont {
+  @apply flex flex-col gap-2;
+}
+
+.site-footer a{
+  @apply underline;
+}
+
+.site-footer-nav .links {
+  @apply flex gap-4;
+}
